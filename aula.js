@@ -50,3 +50,42 @@ const g = f
 console.log(f == g)
 console.log(NaN == NaN)
 console.log('b' + 'a' + + 'a' + 'a') // <-------------------- Teste essa linha Gustavo
+
+/* PARTE 2 DA AULA */
+v1 = []
+console.log(v1.length)
+
+v1[0] = 3.4
+v1[2] = true
+v1[10] = v1[2]
+v1[4] = v1[10]
+v1[2] = false
+console.log(v1.length)
+for (let i = 0; i < v1.length; i++){
+    console.log(v1[i])
+}
+
+// const numeros = [1, 2]
+// numeros[0] = 2
+// console.log(numeros)
+// numeros = 2
+// console.log(numeros)
+
+const num = [1, 2]
+num[100] = 2
+console.log(num)
+console.log(num.length)
+
+const arr = [1, 2, 3]
+
+arr[4124214124125125215125151252151] = 2
+console.log(arr)
+console.log(arr.length)
+
+
+const nomes = ["Ana Maria", "Antonio", "Rodrigo", "Alex", "Cristina", "alec"]
+
+const apenasA = nomes.filter((nome) => {
+//    console.log(nome.startsWith("A"))
+    return nome.startsWith("A")
+})
