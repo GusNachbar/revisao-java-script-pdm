@@ -179,15 +179,28 @@ console.log(soma);
 
 // console.log(filter([1, 2], (n) => n % 2 == 0))
 
-function map (v, f){
-    let aux = [];
-    v.forEach(element => {
-        aux.push(f(element));        
-    });
-        console.log(aux)
+// function map (v, f){
+//     let aux = [];
+//     v.forEach(element => {
+//         aux.push(f(element));        
+//     });
+//         console.log(aux)
+// }
+
+// const func = (s) => s.length
+
+// // map(["abc", "def"], (e) => e.charAt(0))
+// map(["abc", "OPaiÉBom"], func)
+
+let p = {
+    nome: "Maria",
+    idade: 22,
+    endereco: {
+        logradouro: "Rua B",
+        numero: 44,
+        bairro: "Vila K"
+    }
 }
 
-const func = (s) => s.length
-
-// map(["abc", "def"], (e) => e.charAt(0))
-map(["abc", "OPaiÉBom"], func)
+console.log(p.endereco.bairro)
+// console.log(p['endereco'].bairro)

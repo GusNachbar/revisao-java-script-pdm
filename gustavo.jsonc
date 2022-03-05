@@ -1,0 +1,16 @@
+// Estrutura básica para decks compartilhados e locais (considerar arquivo de configurações)
+{
+    "baralho": {
+        "cartas": [
+            {
+                "carta":{
+                    "titulo":"",
+                    "conteudo":"",
+                    "dificuldade":""
+                }
+            }
+        ],
+        "nome": "",
+        "tema": ""
+    }
+}
