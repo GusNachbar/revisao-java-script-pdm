@@ -106,3 +106,88 @@ const valores = [1, 2, 3, 4]
 const soma = valores.reduce((ac, v) => ac + v)
 
 console.log(soma);
+
+// function hello (){
+//     console.log('hello');
+// }
+
+// hello();
+
+// function hello (nome){
+//     console.log('hello ,', nome);
+// }
+
+// hello('Alec');
+
+// function soma(a, b) {
+//     return a + b;
+// }
+
+// soma(3, 2);
+
+// const names = (nomes) =>  nomes.filter(nome => nome.startsWith('A'));
+
+// console.log(names(nomes));
+
+// let funcao = function (){
+//     console.log("Fui referenciado por uma variavel");
+// }
+
+//higher-orde function
+//função que recebe função é uma função de alta ordem
+// function f (funcao){
+//     funcao();
+// }
+
+//função de alta ordem
+
+// function g(){
+//     function outraFuncao(){
+//         console.log('Fui produzida pela G');
+//     }
+//     return outraFuncao()
+// }
+// const resultadoDaG = g()
+// console.log(resultadoDaG)
+
+// f(g)
+// f (function (){
+//     console.log("Estou sendo chamada por f");
+// })
+
+// //vai dar erro pois o número 1 não é chamavel como função
+// f(1)
+
+// const v = [1, 2, 4]
+
+// function x (v, f){
+//     let aux = [];
+//     v.forEach(value => {
+//         const t = f(value)
+//       if(t) aux.push((t)); 
+
+//     })
+//     console.log(aux)
+// }
+// x(v, f);
+
+// function f (n){
+//     if(n % 2 == 0)
+//         return n
+// }
+
+
+// console.log(filter([1, 2], (n) => n % 2 == 0))
+
+function map (v, f){
+    let aux = [];
+    v.forEach(element => {
+        aux.push(f(element));        
+    });
+        console.log(aux)
+}
+
+const func = (s) => s.length
+
+// map(["abc", "def"], (e) => e.charAt(0))
+map(["abc", "OPaiÉBom"], func)
